@@ -1,7 +1,10 @@
 from fastapi import APIRouter, status
 from fastapi.responses import JSONResponse
+from model import QueryModel
 
 api = APIRouter()
+
+
 
 @api.get("/health")
 def health_check():
@@ -16,3 +19,9 @@ def health_check():
             "X-Health-Check": "OK",
             "X-Server-Time": datetime.utcnow().isoformat() + "Z"
         })
+    
+    
+
+@api.post("/search")
+async def search(query: QueryModel):
+    return query.prompt
