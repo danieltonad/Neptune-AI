@@ -27,7 +27,7 @@ def build_parse_results_payload(query: str, scraped_data: list[dict]):
                     "    {\n"
                     "      'name': string,\n"
                     "      'rating': float (0.0–5.0),\n"
-                    "      'price': string from input field 'price_range' or 'unknown',\n"
+                    "      'price': string from input field 'price_range',\n"
                     "      'address': string (from 'location'),\n"
                     "      'booking': string (booking_url) or null,\n"
                     "      'neptune_score': integer, calculated as:\n"
@@ -55,7 +55,7 @@ def build_parse_results_payload(query: str, scraped_data: list[dict]):
                 )
             }
         ],
-        "temperature": 0.5,
+        "temperature": 0.7,
         "max_tokens": 1600
     }
 
