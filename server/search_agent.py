@@ -51,7 +51,7 @@ def build_parse_results_payload(query: str, scraped_data: list[dict]):
                 "role": "user",
                 "content": (
                     f"User query: {query}\n\n"
-                    f"Scraped artisan data:\n{scraped_data[:20]}"
+                    f"Scraped artisan data:\n{scraped_data}"
                 )
             }
         ],
