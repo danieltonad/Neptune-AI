@@ -35,6 +35,6 @@ async def search(query: QueryModel):
     except Exception as e:
         print(f"Error during search: {e}")
         return JSONResponse(
-            content={"message": f"Unable to process search, please try again later. -> {e}"},
+            content={"message": "Unable to process search, please try again later"},
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
         )
