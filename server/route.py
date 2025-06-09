@@ -1,13 +1,14 @@
 from fastapi import APIRouter, status
 from fastapi.responses import JSONResponse
 from model import QueryModel
+from search_agent import search_and_format_artisans
 
 
 api = APIRouter()
 
 
 
-@api.get("/health")
+@api.get("/health", tags=["Health Check"])
 def health_check():
     from datetime import datetime
     return JSONResponse(
@@ -23,6 +24,17 @@ def health_check():
     
     
 
-@api.post("/search")
+@api.post("/search", tags=["Search"])
 async def search(query: QueryModel):
-    return query.prompt
+    try:
+        data = await search_and_format_artisans(query.prompt)
+        return JSONResponse(
+            content=data,
+            status_code=status.HTTP_200_OK
+        )
+    except Exception as e:
+        print(f"Error during search: {e}")
+        return JSONResponse(
+            content={"message": "Unable to process search, please try again later."},
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
