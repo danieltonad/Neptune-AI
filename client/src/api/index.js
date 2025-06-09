@@ -37,9 +37,8 @@ export const post = async (endpoint, data) => {
 
 export const sendMsg = async (message) => {
   try {
-    return await post("/mock-query", {
-      mode: "NORMAL",
-      query: message,
+    return await post("/search", {
+      prompt: message,
     });
   } catch (error) {
     console.error("Error sending message:", error);

@@ -27,15 +27,13 @@ export function SearchProvider({ children }) {
       setIsSearching(true);
       setError(null);
 
-      const response = await sendMsg(content);
-      const responseData = response;
+      const responseData = await sendMsg(content);
 
       const aiMessage = {
         id: generateMessageId(),
         content: responseData.response || responseData.detail,
         sender: "assistant",
-        timestamp: new Date(),
-        charts: responseData.charts,
+        timestamp: new Date()
       };
       setMessages((prev) => [...prev, aiMessage]);
     } catch (err) {

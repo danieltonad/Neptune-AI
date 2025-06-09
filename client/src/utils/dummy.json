@@ -1,0 +1,104 @@
+{
+    "message": "Top-rated dog groomers near me",
+    "data": [
+        {
+            "name": "Dog Groomer Pro #1",
+            "rating": 4.7,
+            "price": "$50 - $90",
+            "address": "Los Angeles, CA",
+            "booking": "https://example.com/doggroomer/1/book",
+            "neptune_score": 87,
+            "source": "Google"
+        },
+        {
+            "name": "Dog Groomer Pro #52",
+            "rating": 4.8,
+            "price": "$50 - $90",
+            "address": "Denver, CO",
+            "booking": "https://example.com/doggroomer/52/book",
+            "neptune_score": 90,
+            "source": "Google"
+        },
+        {
+            "name": "Dog Groomer Pro #63",
+            "rating": 4.4,
+            "price": "$50 - $90",
+            "address": "Atlanta, GA",
+            "booking": "https://example.com/doggroomer/63/book",
+            "neptune_score": 82,
+            "source": "Google"
+        },
+        {
+            "name": "Dog Groomer Pro #75",
+            "rating": 5.0,
+            "price": "$50 - $90",
+            "address": "Miami, FL",
+            "booking": "https://example.com/doggroomer/75/book",
+            "neptune_score": 96,
+            "source": "Google"
+        },
+        {
+            "name": "Dog Groomer Pro #79",
+            "rating": 4.5,
+            "price": "$50 - $90",
+            "address": "Chicago, IL",
+            "booking": "https://example.com/doggroomer/79/book",
+            "neptune_score": 85,
+            "source": "Google"
+        },
+        {
+            "name": "Dog Groomer Pro #84",
+            "rating": 4.3,
+            "price": "$50 - $90",
+            "address": "San Francisco, CA",
+            "booking": "https://example.com/doggroomer/84/book",
+            "neptune_score": 79,
+            "source": "Google"
+        },
+        {
+            "name": "Dog Groomer Pro #47",
+            "rating": 4.4,
+            "price": "$50 - $90",
+            "address": "Chicago, IL",
+            "booking": "https://example.com/doggroomer/47/book",
+            "neptune_score": 82,
+            "source": "Angi"
+        },
+        {
+            "name": "Dog Groomer Pro #71",
+            "rating": 4.3,
+            "price": "$50 - $90",
+            "address": "Chicago, IL",
+            "booking": "https://example.com/doggroomer/71/book",
+            "neptune_score": 79,
+            "source": "Yelp"
+        },
+        {
+            "name": "Dog Groomer Pro #46",
+            "rating": 4.7,
+            "price": "$50 - $90",
+            "address": "Austin, TX",
+            "booking": "https://example.com/doggroomer/46/book",
+            "neptune_score": 87,
+            "source": "Google"
+        },
+        {
+            "name": "Dog Groomer Pro #14",
+            "rating": 4.7,
+            "price": "$80 - $130",
+            "address": "Miami, FL",
+            "booking": "https://example.com/doggroomer/14/book",
+            "neptune_score": 89,
+            "source": "Google"
+        },
+        {
+            "name": "Dog Groomer Pro #36",
+            "rating": 4.9,
+            "price": "$80 - $130",
+            "address": "Los Angeles, CA",
+            "booking": "https://example.com/doggroomer/36/book",
+            "neptune_score": 94,
+            "source": "Yelp"
+        }
+    ]
+}
