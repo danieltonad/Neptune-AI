@@ -1,12 +1,13 @@
-# Neptune Score = (Rating * 20) - (Estimated Avg Price / 10)
-
-
-from utils import fetch_dummy_source
 import asyncio
+from utils import fetch_dummy_source
+from  search_agent import search_and_format_artisans
+
 
 async def async_test():
-    data = await fetch_dummy_source()
-    print(len(data))
+    # data = await fetch_dummy_source()
+    # print(len(data))
+    data = await search_and_format_artisans("plumber in Lagos, Nigeria")
+    print(data)
     
     
     
