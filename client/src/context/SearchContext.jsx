@@ -28,10 +28,10 @@ export function SearchProvider({ children }) {
       setError(null);
 
       const responseData = await sendMsg(content);
-
+      
       const aiMessage = {
         id: generateMessageId(),
-        content: responseData.response || responseData.detail,
+        content: responseData,
         sender: "assistant",
         timestamp: new Date()
       };
