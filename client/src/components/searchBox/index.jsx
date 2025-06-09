@@ -51,6 +51,7 @@ const SearchBox = ({
           spellCheck={false}
           enterKeyHint="send"
         />
+
         <div className="bottom">
           <SearchOptions />
           <button
@@ -61,6 +62,7 @@ const SearchBox = ({
             <ArrowUp size={18} strokeWidth={2.4} />
           </button>
         </div>
+        
       </label>
       {notice && (
         <div className="notice">

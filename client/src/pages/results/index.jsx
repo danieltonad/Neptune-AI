@@ -13,7 +13,8 @@ export function Results() {
   );
 }
 
-const MyMarkdown = ({ children }) => {
+const PromptResponse = ({ children }) => {
+  console.log(children)
   return <div>{children}</div>;
 };
 
@@ -56,7 +57,7 @@ const SentMessage = ({ message }) => {
     <div className="message sent">
       <img src="https://api.dicebear.com/9.x/lorelei/svg" alt="" />
       <div className="text">
-        <MyMarkdown>{message.content}</MyMarkdown>
+        {message.content}
       </div>
     </div>
   );
@@ -68,7 +69,7 @@ const ReceivedMessage = ({ message, children }) => {
       <Bot size={22} />
       {message && (
         <div className="text">
-          <MyMarkdown>{message.content}</MyMarkdown>
+          <PromptResponse>{message.content}</PromptResponse>
           <Actions message={message} />
         </div>
       )}

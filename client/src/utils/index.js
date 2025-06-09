@@ -2,7 +2,7 @@ import { PawPrint, Gem, Globe, Bolt, HeartPulse } from "lucide-react";
 
 export const quickSearch = [
   {
-    name: "Top-rated dog groomers near me",
+    name: "Top-rated dog groomers in San Francisco",
     icon: PawPrint
   },
   {
