@@ -17,6 +17,6 @@ Check it out: **https://neptune-ai.vercel.app**
 - Take your question in plain English
 - Uses an AI model (Groq’s free Llama‑3) to come up with answers
 - Shows service providers with ratings/pricing and booking links
-- Gives each a playful **Neptune Score** so you can compare easily
+- Gives each a **Neptune Score** so you can compare easily
 
 ---
