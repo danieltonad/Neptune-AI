@@ -3,7 +3,7 @@ import Header from "./components/header";
 import { useSearch } from "./context/SearchContext";
 import { Home } from "./pages/home";
 import { Results } from "./pages/results";
-import config from "./utils/config";
+import config from "./utils/config.json";
 
 function App() {
   const { messages, isSearching } = useSearch();
