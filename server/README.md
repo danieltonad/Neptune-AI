@@ -16,21 +16,25 @@ A simple backend service built with FastAPI. It handles natural-language queries
 ⚙️ Getting Started
 
 1. Clone the repo:
-   ```bash 
+```bash 
    git clone https://github.com/danieltonad/Neptune-AI.git
    cd Neptune-AI/server
+```
 
 2. Install dependencies:
 ```bash
    pip install -r requirements.txt
+```
 
 3. Set your API key (.env):
 ```bash
    GROQ_API_KEY="YOUR_GROQ_KEY"
+```
 
 4. Run the server:
 ```bash
    uvicorn main:app --reload
+```
 
    The server will be accessible at http://127.0.0.1:8000
 
