@@ -14,7 +14,7 @@ headers = {
 
 def build_parse_results_payload(query: str, scraped_data: list[dict]):
     return {
-        "model": "llama3-70b-8192",  # or use "gpt-4-turbo" for better JSON control
+        "model": "llama3-70b-8192",
         "messages": [
             {
                 "role": "system",
